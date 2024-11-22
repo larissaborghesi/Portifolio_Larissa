@@ -20,7 +20,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background-color: #1A3D5D; /* Azul escuro */
+            background-color: #1A3D5D;
             color: #f5f3eb;}
 
         header h1 {
@@ -53,7 +53,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: #f5f3eb;}
+            color: #f5f3eb;
+            flex-wrap: wrap;}
 
         .hero-content {
             max-width: 50%;}
@@ -76,17 +77,17 @@
             justify-content: center;
             font-size: 1.5em;}
 
-        .sobre mim {
+        .sobre-mim {
             background-color: #f5f3eb;
             padding: 50px;
             text-align: center;}
 
-        .sobre mim h2 {
+        .sobre-mim h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #1A3D5D;}
 
-        .sobre mim p {
+        .sobre-mim p {
             font-size: 1.2em;
             max-width: 700px;
             margin: auto;}
@@ -100,53 +101,28 @@
             padding: 50px;
             display: flex;
             gap: 20px;
-        }
+            flex-wrap: wrap;}
 
         .education, .experience, .skills {
             width: 30%;
             color: #333;
             position: relative;
-        }
+            margin-bottom: 20px;}
 
         .education h3, .experience h3, .skills h3 {
             font-size: 2em;
             color: #1A3D5D;
-            margin-bottom: 20px;
-        }
-
-        .timeline-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .timeline-item::{
-            content: "★";
-            color: #6B93B5;
-            font-size: 1.2em;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .timeline-line {
-            width: 2px;
-            background-color: #ccc;
-            position: absolute;
-            left: 10px;
-            top: 5px;
-            bottom: 0;
-            margin-top: 15px;}
+            margin-bottom: 20px;}
 
         .skills-section {
             display: flex;
-            justify-content: space-between;}
+            justify-content: space-between;
+            flex-wrap: wrap;}
 
         .skills-list, .languages-list {
             width: 48%;
-            position: relative;}
+            position: relative;
+            margin-bottom: 20px;}
 
         .divider {
             height: 100%;
@@ -156,7 +132,6 @@
             left: 50%;
             top: 0;}
 
-        /* Bloco de Projetos */
         .projects-section {
             background-color: #1A3D5D;
             padding: 50px;
@@ -165,13 +140,13 @@
 
         .projects-section h2 {
             font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #f5f3eb;}
+            margin-bottom: 30px;}
 
         .project-gallery {
             display: flex;
             justify-content: center;
-            gap: 20px;}
+            gap: 20px;
+            flex-wrap: wrap;}
 
         .project-gallery .project-item {
             width: 30%;
@@ -181,9 +156,9 @@
             align-items: center;
             justify-content: center;
             font-size: 1.5em;
-            border-radius: 10px;}
+            border-radius: 10px;
+            margin-bottom: 20px;}
 
-        /* Rodapé com a cor do bloco claro */
         .footer {
             background-color: #f5f3eb;
             padding: 20px;
@@ -191,45 +166,98 @@
             color: #333;
             font-size: 1em;
             border-top: 1px solid #ccc;}
+
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 20px;}
+
+            .hero-image {
+                width: 250px;
+                height: 250px;}
+
+            .resume-section {
+                display: block;}
+
+            .education, .experience, .skills {
+                width: 100%;
+                margin-bottom: 30px;}
+
+            .skills-list, .languages-list {
+                width: 100%;
+                margin-bottom: 20px;}
+
+            .projects-section h2 {
+                font-size: 2em;}
+
+            .project-gallery .project-item {
+                width: 100%;
+                height: 150px;}}
+
+        @media screen and (max-width: 480px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;}
+
+            header nav ul {
+                flex-direction: column;
+                padding-top: 10px;}
+
+            header nav ul li {
+                margin-left: 0;
+                margin-top: 10px; }
+
+            .hero-content h2 {
+                font-size: 3em;}
+
+            .hero-image {
+                width: 200px;
+                height: 200px;}
+
+            .footer {
+                font-size: 0.8em;}}
     </style>
 </head>
 <body>
 
     <header>
-    <h1></h1>
-    <nav>
-        <ul>
-            <li><a href="#">Sobre Mim</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li>
-                <a href="https://wa.me/5511999705178" target="_blank">
-                    <button class="contact-button">Entre em Contato!</button>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<section class="hero-section">
-    <div class="hero-content">
-        <h2>PORTFÓLIO</h2>
-        <br>
-          <div class="social-links">
-    <p style="font-size: 0.8em;">BE: <a href="https://www.behance.net/larissaborghesi" target="_blank" style="color: #f5f3eb; text-decoration: none; font-weight: bold; font-size: 1em;">larissaborghesi</a></p>
-    <p style="font-size: 0.8em;">IG: @larizborghesi</p>
-    <p style="font-size: 0.8em;">LI: <a href="https://www.linkedin.com/in/larissa-borghesi-687091318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #f5f3eb; text-decoration: none; font-weight: bold; font-size: 1em;">Larissa Borghesi</a></p>
-    <div class="contact-info">
-        <p style="font-size: 0.8em;"><strong>Email:</strong> larisborghesi@gmail.com</p>
-        <p style="font-size: 0.8em;"><strong>Telefone:</strong> (11) 999705178</p>
-    </div>
-</div> 
-        </div>
-    </div>
-    <div class="hero-image">
-        <img src="https://i.postimg.cc/MHqZbq3r/minha-foto-1.jpg" alt="Minha Foto" style="width: 100%; height: 100%; border-radius: 50%;">
-    </div>
-</section>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li>
+                    <a href="https://wa.me/5511999705178" target="_blank">
+                        <button class="contact-button">Entre em Contato!</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="sobre mim">
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>PORTFÓLIO</h2>
+            <br>
+            <div class="social-links">
+                <p style="font-size: 0.8em;">BE: <a href="https://www.behance.net/larissaborghesi" target="_blank" style="color: #f5f3eb; text-decoration: none; font-weight: bold; font-size: 1em;">larissaborghesi</a></p>
+                <p style="font-size: 0.8em;">IG: @larizborghesi</p>
+                <p style="font-size: 0.8em;">LI: <a href="https://www.linkedin.com/in/larissa-borghesi-687091318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #f5f3eb; text-decoration: none; font-weight: bold; font-size: 1em;">Larissa Borghesi</a></p>
+                <div class="contact-info">
+                    <p style="font-size: 0.8em;"><strong>Email:</strong> larisborghesi@gmail.com</p>
+                    <p style="font-size: 0.8em;"><strong>Telefone:</strong> (11) 999705178</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.postimg.cc/MHqZbq3r/minha-foto-1.jpg" alt="Minha Foto" style="width: 100%; height: 100%; border-radius: 50%;">
+        </div>
+    </section>
+
+   <section class="sobre mim">
     <br>
         <h2 style="text-align: center; color: #1A3D5D;">Olá!</h2>
         <br>
@@ -242,50 +270,38 @@
 
     <section class="resume-section">
         <div class="education">
-            <h3>Estudo</h3>
-                <p>2022 - Presente: Bacharelado Design - FMU FIAMFAAM</p>
-            </div>
+            <h3>Formação Acadêmica</h3>
+            <p>2022 - Presente: Bacharelado Design - FMU FIAMFAAM</p>
+        </div>
         <div class="experience">
             <h3>Experiência</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaa</p>
-            </div> 
-            <div class="skills">
+            <p>Freelancer</p>
+        </div>
+        <div class="skills">
             <h3>Softwares e Idiomas</h3>
-            <div class="skills-section">
-                <div class="skills-list">
-                    <h4>Softwares</h4>
-                    <ul>
-                        <li>Illustrator</li>
-                        <li>Photoshop</li>
-                        <li>InDesign</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-                <div class="divider"></div>
-                <div class="languages-list">
-                    <h4>Idiomas</h4>
-                    <ul>
-                        <li>Inglês Avançado</li>
-                        <li>Espanhol Básico</li>
-                    </ul>
-                </div>
-            </div>
+            <ul>
+                <li>Illustrator</li>
+                <li>Photoshop</li>
+                <li>InDesign</li>
+                <li>Figma</li>
+                <li>Inglês Avançado</li>
+                <li>Espanhol Básico</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Seção de Projetos -->
     <section class="projects-section">
-        <h2>Projetos</h2>
+        <h2>Meus Projetos</h2>
         <div class="project-gallery">
-            <div class="project-item">Imagem 1</div>
-            <div class="project-item">Imagem 2</div>
-            <div class="project-item">Imagem 3</div>
+            <div class="project-item"><img src="https://i.postimg.cc/Nf06CWN9/dash-mockup.png" alt="Minha Foto" style="width: 100%; height: 100%; border-radius: 5%;"></div>
+            <div class="project-item"><img src="https://i.postimg.cc/mD8cQrWd/id.png" alt="Minha Foto" style="width: 100%; height: 100%; border-radius: 5%;"></div>
+            <div class="project-item"><img src="https://i.postimg.cc/GmFSb0CL/arte-3-aaaaaaaaaa.png" alt="Minha Foto" style="width: 100%; height: 100%; border-radius: 5%;"></div>
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <p>&copy; 2024</p>
     </footer>
+
 </body>
 </html>
