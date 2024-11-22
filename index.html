@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        /* Reset básico */
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
+            box-sizing: border-box;}
 
         body {
             font-family: 'Georgia', serif;
             background-color: #f5f3eb;
-            color: #333;
-        }
+            color: #333;}
 
         header {
             display: flex;
@@ -24,60 +21,50 @@
             align-items: center;
             padding: 20px 50px;
             background-color: #1A3D5D; /* Azul escuro */
-            color: #f5f3eb;
-        }
+            color: #f5f3eb;}
 
         header h1 {
-            font-size: 1.5em;
-        }
+            font-size: 1.5em;}
 
         header nav ul {
             display: flex;
-            list-style-type: none;
-        }
+            list-style-type: none;}
 
         header nav ul li {
-            margin-left: 20px;
-        }
+            margin-left: 20px;}
 
         header nav ul li a {
             text-decoration: none;
             color: #f5f3eb;
-            font-weight: bold;
-        }
+            font-weight: bold;}
 
         .contact-button {
-            background-color: #6B93B5; /* Azul acinzentado claro */
+            background-color: #6B93B5;
             padding: 10px 20px;
             border: none;
             border-radius: 20px;
             color: #f5f3eb;
             font-weight: bold;
-            cursor: pointer;
-        }
+            cursor: pointer;}
 
         .hero-section {
-            background-color: #1A3D5D; /* Azul escuro */
+            background-color: #1A3D5D;
             padding: 100px 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: #f5f3eb;
-        }
+            color: #f5f3eb;}
 
         .hero-content {
-            max-width: 50%;
-        }
+            max-width: 50%;}
 
         .hero-content h2 {
             font-size: 5em;
-            font-weight: bold;
-        }
+            font-weight: bold;}
 
         .social-links p {
             margin: 5px 0;
-            font-size: 1.2em;
-        }
+            font-size: 1.2em;}
 
         .hero-image {
             width: 300px;
@@ -87,31 +74,26 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5em;
-        }
+            font-size: 1.5em;}
 
-        .about-me {
+        .sobre mim {
             background-color: #f5f3eb;
             padding: 50px;
-            text-align: center;
-        }
+            text-align: center;}
 
-        .about-me h2 {
+        .sobre mim h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            color: #1A3D5D; /* Azul escuro */
-        }
+            color: #1A3D5D;}
 
-        .about-me p {
+        .sobre mim p {
             font-size: 1.2em;
             max-width: 700px;
-            margin: auto;
-        }
+            margin: auto;}
 
         .contact-info {
             margin-top: 20px;
-            font-size: 1.1em;
-        }
+            font-size: 1.1em;}
 
         .resume-section {
             background-color: #f5f3eb;
@@ -128,7 +110,7 @@
 
         .education h3, .experience h3, .skills h3 {
             font-size: 2em;
-            color: #1A3D5D; /* Azul escuro */
+            color: #1A3D5D;
             margin-bottom: 20px;
         }
 
@@ -140,9 +122,9 @@
             padding-left: 20px;
         }
 
-        .timeline-item::before {
+        .timeline-item::{
             content: "★";
-            color: #6B93B5; /* Azul acinzentado claro */
+            color: #6B93B5;
             font-size: 1.2em;
             position: absolute;
             left: 0;
@@ -156,18 +138,15 @@
             left: 10px;
             top: 5px;
             bottom: 0;
-            margin-top: 15px;
-        }
+            margin-top: 15px;}
 
         .skills-section {
             display: flex;
-            justify-content: space-between;
-        }
+            justify-content: space-between;}
 
         .skills-list, .languages-list {
             width: 48%;
-            position: relative;
-        }
+            position: relative;}
 
         .divider {
             height: 100%;
@@ -175,28 +154,24 @@
             background-color: #ccc;
             position: absolute;
             left: 50%;
-            top: 0;
-        }
+            top: 0;}
 
         /* Bloco de Projetos */
         .projects-section {
-            background-color: #1A3D5D; /* Azul escuro */
+            background-color: #1A3D5D;
             padding: 50px;
             text-align: center;
-            color: #f5f3eb;
-        }
+            color: #f5f3eb;}
 
         .projects-section h2 {
             font-size: 2.5em;
             margin-bottom: 30px;
-            color: #f5f3eb;
-        }
+            color: #f5f3eb;}
 
         .project-gallery {
             display: flex;
             justify-content: center;
-            gap: 20px;
-        }
+            gap: 20px;}
 
         .project-gallery .project-item {
             width: 30%;
@@ -206,8 +181,7 @@
             align-items: center;
             justify-content: center;
             font-size: 1.5em;
-            border-radius: 10px;
-        }
+            border-radius: 10px;}
 
         /* Rodapé com a cor do bloco claro */
         .footer {
@@ -216,68 +190,66 @@
             text-align: center;
             color: #333;
             font-size: 1em;
-            border-top: 1px solid #ccc;
-        }
+            border-top: 1px solid #ccc;}
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Portfólio</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">aaaaaaaaa</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><button class="contact-button">Entre em Contato!</button></li>
-            </ul>
-        </nav>
-    </header>
+    <h1></h1>
+    <nav>
+        <ul>
+            <li><a href="#">Sobre Mim</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li>
+                <a href="https://wa.me/5511999705178" target="_blank">
+                    <button class="contact-button">Entre em Contato!</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="hero-section">
+    <div class="hero-content">
+        <h2>PORTFÓLIO</h2>
+        <br>
+          <div class="social-links">
+    <p style="font-size: 0.8em;">BE: <a href="https://www.behance.net/larissaborghesi" target="_blank" style="color: #f5f3eb; text-decoration: none; font-weight: bold; font-size: 1em;">larissaborghesi</a></p>
+    <p style="font-size: 0.8em;">IG: @larizborghesi</p>
+    <p style="font-size: 0.8em;">LI: <a href="https://www.linkedin.com/in/larissa-borghesi-687091318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #f5f3eb; text-decoration: none; font-weight: bold; font-size: 1em;">Larissa Borghesi</a></p>
+    <div class="contact-info">
+        <p style="font-size: 0.8em;"><strong>Email:</strong> larisborghesi@gmail.com</p>
+        <p style="font-size: 0.8em;"><strong>Telefone:</strong> (11) 999705178</p>
+    </div>
+</div> 
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://i.postimg.cc/MHqZbq3r/minha-foto-1.jpg" alt="Minha Foto" style="width: 100%; height: 100%; border-radius: 50%;">
+    </div>
+</section>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h2>PORTFÓLIO</h2>
-            <div class="social-links">
-                <p>BE: /username</p>
-                <p>IG: @username</p>
-                <p>LI: /username</p>
-            </div>
-        </div>
-        <div class="hero-image">
-            Imagem
-        </div>
-    </section>
+    <section class="sobre mim">
+    <br>
+        <h2 style="text-align: center; color: #1A3D5D;">Olá!</h2>
+        <br>
+        <p>Me chamo Larissa Borghesi e sou estudante de Bacharelado em Design no 6º semestre da FMU FIAM-FAAM. Durante a minha jornada acadêmica, tive a oportunidade de trabalhar em diversos projetos criativos, e aqui compartilho alguns deles com você. </p>
 
-    <section class="about-me">
-        <h2>Olá!</h2>
-        <p>AAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
-        <div class="contact-info">
-            <p><strong>Email:</strong> larisborghesi@gmail.com</p>
-            <p><strong>Telefone:</strong> (00) 00000-0000</p>
-        </div>
+<p>Se quiser explorar mais do meu trabalho, não deixe de visitar meu Behance, onde você encontrará mais projetos e detalhes sobre minha trajetória.</p>
+
+<p>Estou à disposição para conversarmos e criarmos juntos projetos incríveis!.</p>
     </section>
 
     <section class="resume-section">
         <div class="education">
-            <h3>Educação</h3>
-            <div class="timeline-line"></div>
-            <div class="timeline-item">
+            <h3>Estudo</h3>
                 <p>2022 - Presente: Bacharelado Design - FMU FIAMFAAM</p>
             </div>
-            <div class="timeline-item">
-                <p>aaaaaaaaaaaaaaaaa</p>
-            </div>
-        </div>
-
         <div class="experience">
             <h3>Experiência</h3>
-            <div class="timeline-line"></div>
-            <div class="timeline-item">
                 <p>aaaaaaaaaaaaaaaaaaaaa</p>
-            </div>
-        </div>
-
-        <div class="skills">
+            </div> 
+            <div class="skills">
             <h3>Softwares e Idiomas</h3>
             <div class="skills-section">
                 <div class="skills-list">
@@ -293,8 +265,8 @@
                 <div class="languages-list">
                     <h4>Idiomas</h4>
                     <ul>
-                        <li>Inglês</li>
-                        <li>aaaaaa</li>
+                        <li>Inglês Avançado</li>
+                        <li>Espanhol Básico</li>
                     </ul>
                 </div>
             </div>
@@ -313,8 +285,7 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-        <p>&copy; 2024 - | </p>
+        <p>&copy; 2024</p>
     </footer>
-
 </body>
 </html>
